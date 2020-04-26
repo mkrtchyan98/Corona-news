@@ -19,7 +19,10 @@ const useStyles = makeStyles(theme => ({
   },
   '& div.info':{
   	flex:1,
-  	margin:'10px 40px'
+  	margin:'10px 40px',
+   border: 'solid 10px #604238',
+    borderRadius: '10px',
+
   },
   '& h2':{
   	color:'red',
@@ -82,7 +85,7 @@ const CountryInfo = (props) => {
 		</div>
 				<div className="item">
 		<h4>Total Tests</h4>
-		<p>{props.item.tests.total === null ? 'N/A': props.item.tests.total }</p>
+		<p>{props.item.tests.total === null ? 'N/A': props.item.tests.total}</p>
 		</div>
 
 		</div>
